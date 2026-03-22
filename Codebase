@@ -1,0 +1,57 @@
+# include <iostream>
+
+int main(){
+
+    char op;
+    double num1;
+    double num2;
+    double result;
+    std::string restart;
+
+//while (restart == "yes"){
+
+
+    std::cout << "********* Nicks Rechenmaschiene *********\n";
+
+    std::cout << "Wähle die Rechenart (+ - * /) aus:";
+    std::cin >> op;
+
+    std::cout << "1. Wert: ";
+    std::cin >> num1;
+
+    std::cout << "2. Wert: ";
+    std::cin >> num2;
+
+switch(op){
+
+    case '+':
+        result = num1 + num2;
+        std::cout << "Das Ergebnis ist: " << result << '\n';
+        break;
+        
+    case '-':
+        result = num1 - num2;
+        std::cout << "Das Ergebnis ist: " << result << '\n';
+        break;
+
+    case '*':
+        result = num1 * num2;
+        std::cout << "Das Ergebnis ist: " << result << '\n';
+        break;
+
+    case '/':
+        result = num1 / num2;
+        std::cout << "Das Ergebnis ist: " << result << '\n';
+        break;
+
+    default: 
+    std::cout << "Falsches Format bei eingabe, bitte erneut probieren\n";
+    break;
+    }
+
+        std::cout << "******************\n";
+        std::cout << "Weitere rechnung vornehmen?(Y/N): \n";
+        std::cin >> restart;
+
+while (restart == "yes"){int main};
+}
